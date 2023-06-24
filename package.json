@@ -1,0 +1,59 @@
+{
+  "name": "mpp-cli",
+  "version": "1.0.0",
+  "description": "A CLI for create and bootstrap a react app",
+  "main": "bin/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "https://github.com/lexuantunght/mpp-cli",
+  "homepage": "https://github.com/lexuantunght/mpp-cli#readme",
+  "bin": {
+    "dev": "bin/dev.js",
+    "build": "bin/build.js",
+    "help": "bin/help.js",
+    "lang": "bin/lang.js"
+  },
+  "keywords": [
+    "cli",
+    "npmtool"
+  ],
+  "author": "MPeaceful",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "7.17.8",
+    "@babel/node": "7.16.8",
+    "@babel/plugin-proposal-class-properties": "7.16.7",
+    "@babel/plugin-transform-runtime": "7.18.6",
+    "@babel/preset-env": "7.16.11",
+    "@babel/preset-react": "7.16.7",
+    "@babel/preset-typescript": "7.16.7",
+    "@babel/runtime": "7.18.6",
+    "@svgr/webpack": "6.5.1",
+    "babel-loader": "8.2.5",
+    "babel-plugin-transform-typescript-metadata": "^0.3.2",
+    "circular-dependency-plugin": "^5.2.2",
+    "copyfiles": "^2.4.1",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.7.3",
+    "css-minimizer-webpack-plugin": "3.4.1",
+    "eslint": "^8.36.0",
+    "eslint-plugin-react": "^7.32.2",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.1",
+    "mini-css-extract-plugin": "^2.7.5",
+    "rimraf": "3.0.2",
+    "sass": "^1.59.3",
+    "sass-loader": "^13.2.2",
+    "style-loader": "^3.3.2",
+    "terser-webpack-plugin": "^5.3.7",
+    "ts-loader": "^9.4.2",
+    "ttypescript": "^1.5.15",
+    "typescript": "^4.9.3",
+    "typescript-transform-paths": "3.4.6",
+    "webpack": "^5.79.0",
+    "webpack-bundle-analyzer": "^4.8.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.13.3"
+  }
+}
