@@ -1,6 +1,6 @@
 {
   "name": "mpp-cli",
-  "version": "1.2.1",
+  "version": "1.2.3",
   "description": "A CLI for create and bootstrap a react app",
   "main": "./bin/index.js",
   "scripts": {
@@ -43,6 +43,7 @@
     "html-webpack-plugin": "^5.5.1",
     "mini-css-extract-plugin": "^2.7.5",
     "optimist": "0.6.1",
+    "postcss-loader": "^7.3.3",
     "rimraf": "3.0.2",
     "sass": "^1.59.3",
     "sass-loader": "^13.2.2",

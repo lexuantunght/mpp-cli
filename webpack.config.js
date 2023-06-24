@@ -80,6 +80,7 @@ module.exports = {
               },
             },
           },
+          "postcss-loader",
           "sass-loader",
         ],
       },
