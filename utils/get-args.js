@@ -1,4 +1,4 @@
-export function getArgs() {
+exports.getArgs = () => {
 	const args = {};
 	process.argv.slice(2, process.argv.length).forEach((arg) => {
 		// long arg
