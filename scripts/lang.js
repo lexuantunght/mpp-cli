@@ -1,11 +1,9 @@
 const fs = require('fs');
 const path = require('path');
-const { getArgs } = require('../utils/get-args');
+const argv = require('optimist').argv;
 
-const args = getArgs();
-
-const INP_DIR = args.i; //'src/web/static/lang/lang_pomodoro.csv';
-const OUT_DIR = args.o; //'src/web/static/locales';
+const INP_DIR = argv.i; //'src/web/static/lang/lang_pomodoro.csv';
+const OUT_DIR = argv.o; //'src/web/static/locales';
 
 csv = fs.readFileSync(INP_DIR);
 

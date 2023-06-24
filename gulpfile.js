@@ -8,6 +8,9 @@ var runTimestamp = Math.round(Date.now() / 1000);
 const inpDir = argv.i;
 const outDir = argv.o;
 
+console.log("Input:", inpDir);
+console.log("output:", outDir);
+
 gulp.task('iconfont', function () {
 	return gulp
 		.src([`${inpDir}/*.svg`]) // folder svg
