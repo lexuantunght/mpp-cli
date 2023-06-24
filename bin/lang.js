@@ -1,4 +1,3 @@
-#! /usr/bin/env node
-const { exec } = require('child_process');
-
-exec('node scripts/lang.js');
+module.exports = {
+    script: "node scripts/lang.js"
+}

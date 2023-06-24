@@ -1,8 +1,8 @@
 {
   "name": "mpp-cli",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "A CLI for create and bootstrap a react app",
-  "main": "bin/index.js",
+  "main": "./bin/index.js",
   "preferGlobal": true,
   "directories": {
     "bin": "./bin"
@@ -13,10 +13,7 @@
   "repository": "https://github.com/lexuantunght/mpp-cli",
   "homepage": "https://github.com/lexuantunght/mpp-cli#readme",
   "bin": {
-    "dev": "bin/dev.js",
-    "build": "bin/index.js",
-    "help": "bin/help.js",
-    "lang": "bin/lang.js"
+    "mpp": "./bin/index.js"
   },
   "keywords": [
     "cli",
@@ -24,7 +21,7 @@
   ],
   "author": "MPeaceful",
   "license": "MIT",
-  "devDependencies": {
+  "dependencies": {
     "@babel/core": "7.17.8",
     "@babel/node": "7.16.8",
     "@babel/plugin-proposal-class-properties": "7.16.7",
@@ -46,6 +43,7 @@
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.1",
     "mini-css-extract-plugin": "^2.7.5",
+    "optimist": "0.6.1",
     "rimraf": "3.0.2",
     "sass": "^1.59.3",
     "sass-loader": "^13.2.2",

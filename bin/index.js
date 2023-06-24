@@ -1,7 +1,26 @@
 #! /usr/bin/env node
 const { exec } = require('child_process');
-const { getArgs } = require('../utils/get-args');
+const argv = require('optimist').argv;
+const buildCmd = require('./build');
+const devCmd = require('./dev');
+const langCmd = require('./lang');
+const helpCmd = require('./help');
 
-const entry = getArgs().entry || "index.js";
+const command = argv[0] || 'build';
 
-exec(`cross-env NODE_ENV=production ENTRY=${entry} && webpack`);
+switch (command) {
+    case 'build':
+        exec(buildCmd.script);
+        break;
+    case 'dev':
+        exec(devCmd.script);
+        break;
+    case 'lang':
+        exec(langCmd.script);
+        break;
+    case 'help':
+        helpCmd.exec();
+        break;
+    default:
+        break;
+}
