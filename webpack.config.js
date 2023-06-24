@@ -1,5 +1,4 @@
 const path = require('path');
-const os = require('os');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const TerserWebpackPlugin = require('terser-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -126,7 +125,6 @@ module.exports = {
 		//new ContextReplacementPlugin(/moment[/\\]locale$/, /vi|en|fr|de|es/),
 		new DefinePlugin({
 			__DEV__: isDev,
-            __PLATFORM__: os.platform(),
 		}),
 		...devPlugins,
 	],

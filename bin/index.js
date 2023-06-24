@@ -14,18 +14,26 @@ if (argv["_"] && argv["_"][0]) {
 
 console.log("Run mpp command:", command);
 
+const doExec = (script) => {
+    exec(script, (e, out, err) => {
+        console.error(e);
+        console.log(out);
+        console.error(err);
+    });
+}
+
 switch (command) {
     case 'build':
-        exec(buildCmd.script);
+        doExec(buildCmd.script);
         break;
     case 'dev':
-        exec(devCmd.script);
+        doExec(devCmd.script);
         break;
     case 'lang':
-        exec(langCmd.script);
+        doExec(langCmd.script);
         break;
     case 'icon':
-        exec(iconCmd.script);
+        doExec(iconCmd.script);
         break;
     case 'help':
         helpCmd.exec();
