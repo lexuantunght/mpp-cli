@@ -6,7 +6,12 @@ const devCmd = require('./dev');
 const langCmd = require('./lang');
 const helpCmd = require('./help');
 
-const command = argv[0] || 'build';
+let command = 'build';
+if (argv["_"] && argv["_"][0]) {
+    command = argv["_"][0];
+}
+
+console.log("Run mpp command:", command);
 
 switch (command) {
     case 'build':
