@@ -4,6 +4,7 @@ const argv = require('optimist').argv;
 const buildCmd = require('./build');
 const devCmd = require('./dev');
 const langCmd = require('./lang');
+const iconCmd = require('./icon');
 const helpCmd = require('./help');
 
 let command = 'build';
@@ -22,6 +23,9 @@ switch (command) {
         break;
     case 'lang':
         exec(langCmd.script);
+        break;
+    case 'icon':
+        exec(iconCmd.script);
         break;
     case 'help':
         helpCmd.exec();
