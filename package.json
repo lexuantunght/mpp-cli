@@ -1,6 +1,6 @@
 {
   "name": "mpp-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A CLI for create and bootstrap a react app",
   "main": "bin/index.js",
   "scripts": {
@@ -10,7 +10,7 @@
   "homepage": "https://github.com/lexuantunght/mpp-cli#readme",
   "bin": {
     "dev": "bin/dev.js",
-    "build": "bin/build.js",
+    "build": "bin/index.js",
     "help": "bin/help.js",
     "lang": "bin/lang.js"
   },
