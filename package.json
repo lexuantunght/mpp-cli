@@ -1,8 +1,12 @@
 {
   "name": "mpp-cli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A CLI for create and bootstrap a react app",
   "main": "bin/index.js",
+  "preferGlobal": true,
+  "directories": {
+    "bin": "./bin"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
